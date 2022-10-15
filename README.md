@@ -20,10 +20,10 @@ Os ETLs relativos a esse módulo podem ser encontrados no caminho '/dags/etlScri
 Após execução das tarefas relativas ao módulo, a DAG envia e-mails de notificação, informando o status dos processos.
 
 * ETLs do Módulo de Centros de Custos:
-Esse módulo, construído para fins de prototipagem, visando extritamente a apresentação da arquitetura proposta, suas integrações com os diferentes sistemas e componentes internos, sugere o processo de ETL relativo ao conceito de Centros de Custos do SCIAC.
+Esse módulo, construído para fins de prototipagem, visando estritamente a apresentação da arquitetura proposta, suas integrações com os diferentes sistemas e componentes internos, sugere o processo de ETL relativo ao conceito de Centros de Custos do SCIAC.
 Para tal, foram construídas três tarefas:
 - busca_centros_custos: Acessa uma APIFake, que simula o funcionamento do Sistema da Estrutura Organizacional do Município, de onde se obtém as informações relativas aos órgãos que compõem a instituição, armazenando os dados coletados em um arquivo temporário, a ser utilizado pela proxima tarefa;
--atualiza_centros_custos:   Obtém os centros de custos armazenados previamente na base de dados do SCIAC, contida no banco noSQL de grafos, neo4j (também disponível em ambiente de núvem), e compara com os dados obtidos pela tarefa anterior, atualizando os dados do SCIAC e salvando tais alterações no arquivo temporário;
+- atualiza_centros_custos:   Obtém os centros de custos armazenados previamente na base de dados do SCIAC, contida no banco noSQL de grafos, neo4j (também disponível em ambiente de núvem), e compara com os dados obtidos pela tarefa anterior, atualizando os dados do SCIAC e salvando tais alterações no arquivo temporário;
 - carrega_centros_custos: Carrega os dados do arquivo temporário, agora atualizados, na base de dados do SCIAC.
 
 # SCIAC-APIFake

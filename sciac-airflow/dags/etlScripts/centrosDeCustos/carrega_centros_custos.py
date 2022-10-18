@@ -3,7 +3,7 @@ import json
 import logging
 
 # Obtendo os dados no arquivo temporário
-log.info('Obtendo os dados armazenados no arquivo temporário pela tarefa anterior')
+logging.info('Obtendo os dados armazenados no arquivo temporário pela tarefa anterior')
 file = '/usr/local/airflow/dags/etlScripts/tempFiles/centros_de_custos_temp.txt'
 with open(file,'r') as temp_file: 
 
@@ -12,6 +12,6 @@ with open(file,'r') as temp_file:
     temp_file.close()
 
 # Estabelece a conexão com o banco de dados e carrega os dados atualizados
-log.info('Gravando as alterações na base')
+logging.info('Gravando as alterações na base')
 
-log.info('Centros de Custos carregados com sucesso!')
+logging.info('Centros de Custos carregados com sucesso!')

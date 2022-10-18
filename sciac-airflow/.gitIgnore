@@ -1,2 +1,2 @@
 #Arquivos locais do Apache Airflow
-dags/__picache__/*
+./dags/__picache__/*

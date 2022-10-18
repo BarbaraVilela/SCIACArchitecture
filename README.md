@@ -39,7 +39,7 @@ Para acessar os componentes rodando em ambiente de nuvem, acesse os links abaixo
 * sciac-airflow: https://airflow.azurewebsites.net/
 * sciac-APIFake: https://sciac-api-fake.azurewebsites.net/
 * E-mail de notificações: https://outlook.live.com
-* Banco de dados Neo4j: 
+* Banco de dados Neo4j: neo4j+s://1258ca96.databases.neo4j.io
 
 As credenciais de acesso necessárias para testar a aplicação encontra-se no arquivo 'secret.txt'
 Obs.: Os serviços estarão disponíveis apenas durante o período de avaliação do projeto.

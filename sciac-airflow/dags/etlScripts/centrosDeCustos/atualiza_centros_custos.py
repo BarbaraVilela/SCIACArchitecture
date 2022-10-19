@@ -26,8 +26,12 @@ grafo = GraphDatabase.driver(uri, auth=(user, password))
 grafo
 
 # Obtém os centros de custos ativos na base
-
-
+session=grafo.session()
+q1="MATCH (n) RETURN (n)"
+nodes=session.run(q1)
+print('Os nós encontrados foram:')
+for node in nodes:
+    print(node)
 
 
 grafo.close()

@@ -1,2 +1,5 @@
 #Arquivos locais do Apache Airflow
-./dags/__picache__/*
+dags/__picache__/*
+
+# Arquivos temporários gerados pelos ETLs
+dags\etlScripts\tempFiles/*

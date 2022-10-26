@@ -39,10 +39,11 @@ Para acessar os componentes rodando em ambiente de nuvem, acesse os links abaixo
 * sciac-airflow: https://airflow.azurewebsites.net/
 * sciac-APIFake: https://sciac-api-fake.azurewebsites.net/
 * E-mail de notificações: https://outlook.live.com
-* Banco de dados Neo4j: neo4j+s://1258ca96.databases.neo4j.io
+* Banco de dados Neo4j: https://bloom.neo4j.io/index.html?connectURL=neo4j%2Bs%3A%2F%2F1258ca96.databases.neo4j.io&ntid=auth0%7C63480cf4bac51a1cd0c8f3e5&_ga=2.110474306.673055795.1666777811-1948287294.1666777811
 
-As credenciais de acesso necessárias para testar a aplicação encontra-se no arquivo 'secret.txt'
-Obs.: Os serviços estarão disponíveis apenas durante o período de avaliação do projeto.
+IMPORTANTE:
+* As credenciais de acesso necessárias para testar a aplicação encontra-se no arquivo 'secret.txt'
+* Os serviços estarão disponíveis apenas durante o período de avaliação do projeto.
 
  # Considerações finais
  O SCIAC é um sistema real, já em produção em um órgão do executivo municipal brasileiro, contudo, apresenta inúmeros desafios para sua continuidade, tais como: tecnologias já obsoletas, falhas nos processos e grande acoplamento de código.
